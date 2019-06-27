@@ -10,7 +10,6 @@ if (isIdExist && isIdExist.length) {
 
 if (bookId) {
     initForm(formElem, findBookById(bookId));
-
     formElem.querySelector('input[type="submit"]').value = 'Изменить'
 }
 

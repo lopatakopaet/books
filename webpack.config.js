@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -18,6 +19,15 @@ module.exports = {
         }]
     },
     devServer: {
+        contentBase: [
+            path.join(__dirname, '/dist'),
+        ],
         overlay: true
-    }
+    },
+    plugins: [
+        new CopyPlugin([
+            { from: 'src/assets', to: 'assets' },
+            { from: 'public', to: '' }
+        ]),
+    ],
 }

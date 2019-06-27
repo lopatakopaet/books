@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/raccoon.ico">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/raccoon.ico">
 </head>
 <body>
-<div class="search">
-    <input class="search_input" type="text" placeholder="Поиск книг по названию">
-<!--    <input class="button" type="button" value="Поиск">-->
-</div>
-<div class="books_list"></div>
 <div class="form_wrap">
     <form action="">
         <p>Название книги</p>
         <input name="name_book" type="text" value="test">
         <p>Фото книги</p>
-        <input class="add_photo" type="button" title="Добавить фото" value="+">
         <div class="photos">
             <input name="photo" type="text" value="https://wallbox.ru/resize/1024x1024/wallpapers/main/201328/anime-kartinka-risunok-42606ee.jpg">
         </div>
+        <input class="add_photo" type="button" title="Добавить фото" value="Добавить фото">
         <p>Авторы книги</p>
         <input name="author" type="text" value="test">
         <p>Дата издательства</p>
@@ -33,12 +28,10 @@
         <input name="phone" type="text" value="test">
         <p>Рубрика книги</p>
         <input name="theme" type="text" value="test">
-        <input class="submit" type="submit" value="Добавить книгу">
+        <input class="submit" type="submit" value="Сохранить">
     </form>
 </div>
-<div class="slider_wrap">
-</div>
-<img src="" alt="" class="testPhoto">
-<script src="./dist/app.js"></script>
+
+<script src="./form.js"></script>
 </body>
 </html>
